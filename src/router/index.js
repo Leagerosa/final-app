@@ -18,7 +18,8 @@ export default new Router({
             name: 'inicio',
             component: inicio,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: false
             }
         },
         {
@@ -26,7 +27,8 @@ export default new Router({
             name: 'chat',
             component: chat,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: false
             }
         },
         {
@@ -34,7 +36,8 @@ export default new Router({
             name: 'presentation',
             component: presentation,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: false
             }
         },
         {
@@ -42,7 +45,8 @@ export default new Router({
             name: 'preHome',
             component: preHome,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: true
             }
         },
         {
@@ -50,7 +54,8 @@ export default new Router({
             name: 'home',
             component: home,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: true
             }
         },
         {
@@ -58,7 +63,8 @@ export default new Router({
             name: 'psicologo',
             component: psicologo,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: true
             }
         },
         {
@@ -66,7 +72,8 @@ export default new Router({
             name: 'chatFavs',
             component: chatFavs,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: true
             }
         },
         {
@@ -74,7 +81,8 @@ export default new Router({
             name: 'perfil',
             component: perfil,
             meta: {
-                nomenu: true
+                nomenu: true,
+                inferior: true
             }
         },
     ]

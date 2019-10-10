@@ -1,6 +1,6 @@
 <template>
 <v-app>
-<!--<NavMenu v-if="$route.meta.menu"/>-->
+<MenuInferior v-if="$route.meta.inferior"/>
 <NavNoMenu v-if="$route.meta.nomenu"/>
   <v-content>
     <v-container fluid>
@@ -13,11 +13,11 @@
 </template>
 
 <script>
- //import NavMenu from "./components/NavMenu.vue"
+ import MenuInferior from "./components/MenuInferior.vue"
  import NavNoMenu from "./components/NavNoMenu.vue"
 export default {
   components: {
-    //NavMenu,
+    MenuInferior,
     NavNoMenu
   },
   name: 'App'
