@@ -1,10 +1,10 @@
 <template>
   <div class="text-center">
-    <v-btn class="pa-12 ma-10" fab dark x-large color="primary">
+    <v-btn class="pa-12 ma-10" fab dark x-large color="accent">
       <p>QUIERO <br> AYUDAR</p>
     </v-btn>
 
-    <v-btn class="pa-12 ma-12" fab dark x-large color="primary">
+    <v-btn class="pa-12 ma-12" fab dark x-large color="accent">
       <p>NECESITO<br> AYUDA</p>
     </v-btn>
 
