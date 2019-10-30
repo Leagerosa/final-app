@@ -1,35 +1,28 @@
 <template>
   <div>
-    <v-app-bar bottom app color="#E0E0E0">
-      <v-container>
-          <v-row>
-            <v-col cols="4">
-              <v-btn class="px-3 mx-3" outlined>
-                      <v-icon color="yellow">mdi-star</v-icon>
-                      <!--<span>Pago</span>-->
-                  </v-btn>
-            </v-col>
-            <v-col cols="4">
-              <v-btn class="px-3 mx-5" outlined>
-                      <v-icon color="pink">mdi-heart</v-icon>
-                      <!--<span>Favs</span>-->
-                  </v-btn>
-            </v-col>
-            <v-col cols="4">
-              <v-btn class="px-3 mx-3" outlined>
-                      <v-icon>mdi-account</v-icon>
-                      <!--<span>Perfil</span>-->
-                  </v-btn>
-            </v-col>
-          </v-row>
-        </v-container>
-    </v-app-bar>
+    <v-bottom-navigation v-model="bottomNav" app>
+      <v-btn value="recent" class="pa-3 mx-3">
+        <span>Psicólogo</span>
+        <v-icon color="yellow">mdi-star</v-icon>
+      </v-btn>
+
+      <v-btn value="favorites" class="pa-3 mx-5">
+        <span>Favoritos</span>
+        <v-icon color="pink">mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn value="nearby" class="pa-3 mx-3">
+        <span>Perfil</span>
+        <v-icon color="black">mdi-account</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </div>
 </template>
+
   <script>
-export default {
-  data: () => ({
-    inferior: false,
-  }),
-};
+  export default {
+    data: () => ({
+      bottomNav: 'recent',
+    }),
+  };
 </script>
