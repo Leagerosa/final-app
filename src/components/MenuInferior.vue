@@ -5,13 +5,13 @@
           <v-row>
             <v-col cols="4">
               <v-btn class="px-3 mx-3" outlined>
-                      <v-icon>mdi-star</v-icon>
+                      <v-icon color="yellow">mdi-star</v-icon>
                       <!--<span>Pago</span>-->
                   </v-btn>
             </v-col>
             <v-col cols="4">
               <v-btn class="px-3 mx-5" outlined>
-                      <v-icon>mdi-heart</v-icon>
+                      <v-icon color="pink">mdi-heart</v-icon>
                       <!--<span>Favs</span>-->
                   </v-btn>
             </v-col>
